@@ -1,0 +1,369 @@
+.chart-container {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  margin: 0 auto;
+  padding: 1rem;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.chart {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 1rem;
+  background-color: #f9fafb;
+  min-height: 100vh;
+}
+
+.home-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  color: #1f2937;
+  text-align: center;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 900px;
+  width: 100%;
+}
+
+.feature-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.feature-card h2 {
+  font-size: 1.5rem;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .features {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .feature-card {
+    width: 48%;
+  }
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index:20;
+  position:sticky;
+  background-color: #000000;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+.nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav a:hover {
+  color: #38bdf8;
+}
+
+
+.about-container {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: #f3f4f6;
+  border-radius: 1rem;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1f2937;
+}
+
+.about-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #111827;
+  text-align: center;
+}
+
+.about-container p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+
+.stock-input-container {
+  max-width: 500px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: #f9fafb;
+  border-radius: 1rem;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.stock-input-container h1 {
+  text-align: center;
+  color: #111827;
+  margin-bottom: 2rem;
+}
+
+.stock-input-container label {
+  font-weight: 600;
+  color: #374151;
+}
+
+.stock-input-container input[type="text"],
+.stock-input-container select {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.stock-input-container input[type="submit"] {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #2563eb;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.stock-input-container input[type="submit"]:hover {
+  background-color: #1e40af;
+}
+
+
+.stock-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.info-chart-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+.solo-info-card {
+  flex: 1;
+  background-color: #f3f4f6;
+  padding: 1.5rem;
+  border-radius: 1rem;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: #1f2937;
+}
+
+.chart-container {
+  flex: 1.5;
+  min-width: 300px;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.chart {
+  width: 100%;
+  height: 400px;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.action-buttons button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  background-color: #2563eb;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.action-buttons button:hover {
+  background-color: #1e3a8a;
+}
+
+/* For compare page - keep charts side by side */
+.compare-charts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.compare-charts .chart-container {
+  flex: 1;
+}
+
+
+/* === Compare Form === */
+.compare-form-container {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #f3f4f6;
+  border-radius: 1rem;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.compare-form-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #1f2937;
+}
+
+.compare-form-container label {
+  font-weight: 600;
+  display: block;
+  margin-top: 1rem;
+  color: #374151;
+}
+
+.compare-form-container input[type="text"],
+.compare-form-container select {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.compare-form-container input[type="submit"] {
+  width: 100%;
+  margin-top: 2rem;
+  padding: 0.75rem;
+  background-color: #2563eb;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.compare-form-container input[type="submit"]:hover {
+  background-color: #1e40af;
+}
+
+
+/* === Comparison Results === */
+.compare-results-container {
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.compare-results-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.compare-charts {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.compare-charts .chart-container {
+  flex: 1;
+  min-width: 350px;
+}
+
+.chart {
+  height: 400px;
+}
+
+.compare-info-box {
+  background-color: #f9fafb;
+  padding: 1.5rem;
+  border-radius: 1rem;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: #1f2937;
+  text-align:center;
+}
+
+.compare-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.compare-buttons button {
+  padding: 0.75rem 1.5rem;
+  background-color: #2563eb;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.compare-buttons button:hover {
+  background-color: #1e3a8a;
+}
+
