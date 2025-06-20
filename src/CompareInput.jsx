@@ -73,10 +73,10 @@ function CompareInput(){
 			ref={ rSym2 }  	onChange={ hSym2 } value={ sym2 }/>
 			<br /><br />
 			<label> Select interval </label>
-			<select >
-				<option value="day" onChange={hInter} >1 Day </option>
-				<option value="week" onChange={hInter}>1 Week </option>
-				<option value="month" onChange={hInter}>1 Month </option>
+			<select onChange={hInter} value={inter}>
+				<option value="day" >1 Day </option>
+				<option value="week" >1 Week </option>
+				<option value="month" >1 Month </option>
 			</select>
 			<br /><br />
 			<div className="action-buttons">

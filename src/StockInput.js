@@ -16,6 +16,7 @@ function StockInput() {
 	const getDetail = async (event) => {
 		event.preventDefault();
 
+		console.log(inter);
 		const apiKey = process.env.REACT_APP_API_KEY;
 		const url = `https://api.twelvedata.com/time_series?symbol=${symbol}&interval=1${inter}&apikey=${apiKey}`;
 
@@ -42,21 +43,21 @@ function StockInput() {
 		<>
 			<div className="stock-input-container">
 			<h1> Check Stock Details </h1>
-			<form >
+			<form onSubmit={getDetail}>
 				<label> Enter Stock Symbol </label>
 				<br />
 				<input type="text" placeholder="eg (AAPL, NVDA..)" required
 					ref={rSymbol} onChange={hSymbol} value={symbol} />
 				<br /><br />
 				<label> Select interval </label>
-				<select >
-					<option value="day" onChange={hInter} >1 Day </option>
-					<option value="week" onChange={hInter}>1 Week </option>
-					<option value="month" onChange={hInter}>1 Month </option>
+				<select onChange={hInter} value={inter}>
+					<option value="day" >1 Day </option>
+					<option value="week" >1 Week </option>
+					<option value="month" >1 Month </option>
 				</select>
 				<br /><br />
 				<div className="action-buttons">
-					<button onClick={getDetail}> Get Details </button>
+					<input type="submit" value="Get Details" />
 					<button onClick={ ()=> nav("/") }> Back </button>
 				</div>
 			</form>
